@@ -1,0 +1,284 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(216, 216, 216);
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.675), rgba(0, 0, 0, 0.675)), url(../images/musculacao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+
+.wrapper {
+    font-size: 14px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.89);
+    top: 0px;
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.634);
+}
+
+.menu  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 400px);
+}
+
+section {
+    padding: 10px;
+    margin-top: 200px;
+}
+
+.centralizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Agendar*/
+#agendar {
+    border: 1px solid whitesmoke;
+    padding: 15px;
+    width: 50%;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.038);
+}
+
+/* Planos */
+
+table {
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.6);
+    margin-top: 100px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px 10px;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.64);
+}
+
+tr {
+    background-color: rgba(0, 0, 0, 0.212);
+    font-style: oblique;
+}
+
+/* Unidades */
+.unidades-container {
+    padding: 10px;
+}
+
+.unidades-div {
+    margin-bottom: 100px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+footer ul {
+    display: flex;
+}
+
+.contato-container {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+/* OUTRAS CLASSES */
+.icone {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.wpp-icon-container {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 300px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#wpp-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.sombra-de-texto {
+    text-shadow: 2px 2px 2px rgba(143, 143, 143, 0.237);
+}
+
+.link-title {
+    cursor: default;
+}
+
+@media screen and (min-width:1000px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 400px);
+    }
+
+    /* HEADER */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .menu  {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-item {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .menu-item:hover {
+        color: white;
+        border: 1px solid whitesmoke;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.307);
+    }
+
+    /* MAIN */
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 400px);
+    }
+
+    .centralizado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* Agendar*/
+    #agendar {
+        border: 1px solid whitesmoke;
+        margin-top: 150px;
+        padding: 15px;
+        width: 25%;
+        cursor: pointer;
+        box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.038);
+    }
+
+    #agendar:hover {
+        transform: scale(1.01);
+        color: whitesmoke;
+    }
+
+
+    .unidades-container {
+        padding: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.89);
+    }
+
+    .contato-container {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    /* OUTRAS CLASSES */
+    .icone {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .wpp-icon-container {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 60px;
+        right: 40px;
+        cursor: pointer;
+    }
+    
+    .wpp-icon-container:hover {
+        transform: scale(1.05);
+    }
+    
+    #wpp-icon {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.fonte-um {
+    font-family: 'Tilt Warp', cursive;
+    text-transform: uppercase;
+}
+
+.fonte-dois {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: italic;
+}
